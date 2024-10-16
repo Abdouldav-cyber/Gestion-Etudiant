@@ -1,7 +1,7 @@
 package model;
 
+import java.sql.Date; // Utilisation correcte de java.sql.Date pour la compatibilité avec JDBC
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class Etudiant {
@@ -22,47 +22,47 @@ public class Etudiant {
 
     // Getters et setters
     public String getIdEtudiant() {
-        return idEtudiant; // Retourne l'ID de l'étudiant
+        return idEtudiant;
     }
 
     public void setIdEtudiant(String idEtudiant) {
-        this.idEtudiant = idEtudiant; // Met à jour l'ID de l'étudiant
+        this.idEtudiant = idEtudiant;
     }
 
     public String getNom() {
-        return nom; // Retourne le nom de l'étudiant
+        return nom;
     }
 
     public void setNom(String nom) {
-        this.nom = nom; // Met à jour le nom de l'étudiant
+        this.nom = nom;
     }
 
     public String getPrenom() {
-        return prenom; // Retourne le prénom de l'étudiant
+        return prenom;
     }
 
     public void setPrenom(String prenom) {
-        this.prenom = prenom; // Met à jour le prénom de l'étudiant
+        this.prenom = prenom;
     }
 
     public Date getDateNaissance() {
-        return dateNaissance; // Retourne la date de naissance de l'étudiant
+        return dateNaissance;
     }
 
     public void setDateNaissance(Date dateNaissance) {
-        this.dateNaissance = dateNaissance; // Met à jour la date de naissance de l'étudiant
+        this.dateNaissance = dateNaissance;
     }
 
     public List<Cours> getCoursSuivis() {
-        return coursSuivis; // Retourne la liste des cours suivis
+        return coursSuivis;
     }
 
     // Méthodes pour gérer les cours suivis
     public void ajouterCours(Cours cours) {
-        coursSuivis.add(cours); // Ajoute un cours à la liste
+        coursSuivis.add(cours);
     }
 
     public void supprimerCours(Cours cours) {
-        coursSuivis.remove(cours); // Supprime un cours de la liste
+        coursSuivis.remove(cours);
     }
 }
